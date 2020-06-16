@@ -1,0 +1,22 @@
+
+$color_text: #6f6f6f;
+.type-1812 {
+    background-color: #DDDDDD;
+    height: 60%;
+    a{
+        text-decoration: none !important;
+    }
+    .mess{
+        width: 100%;
+        font-size: 12px;
+        background-color: #23a455;
+        color: white;
+    }
+    .mess i{
+        font-size: 14px;
+    }
+    .content p{
+        color: $color_text;
+    }
+    
+}

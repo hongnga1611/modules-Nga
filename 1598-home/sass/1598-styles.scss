@@ -1,0 +1,61 @@
+            $color_text: #6ad078;
+            $color_content: #7a7a7a;
+            $font-size_content: 17px;
+            $color_backgroud: white;
+            %re-content {
+                -webkit-line-clamp: 4;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+                display: -webkit-box;
+            }
+            
+            .type-1598 {
+                background-color: $color_backgroud;
+                .title {
+                    h2 {
+                        font-weight: 700;
+                        line-height: 30px;
+                    }
+                }
+                .separation {
+                    width: 125px;
+                    border-top: 2px solid $color_text !important;
+                }
+                .content {
+                    p {
+                        @extend %re-content;
+                        color: $color_content;
+                        font-size: $font-size_content;
+                        line-height: 27px;
+                    }
+                    .targets {
+                        i {
+                            color: $color_text;
+                            font-size: 16px;
+                        }
+                    }
+                }
+                .grid-container {
+                    display: grid;
+                    grid-template-columns: auto auto auto;
+                }
+                .grid-item {
+                    background-color: rgba(255, 255, 255, 0.8);
+                    padding: 5px;
+                    a {
+                        img {
+                            transition: opacity 0.2s ease;
+                            opacity: 1;
+                        }
+                        img:hover {
+                            transition: opacity .2s ease;
+                            opacity: 0.9;
+                        }
+                    }
+                }
+                @media only screen and (max-width: 768px) {
+                    .grid-container {
+                        display: block;
+                    }
+                }
+            }
